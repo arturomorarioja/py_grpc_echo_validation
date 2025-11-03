@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+service Echo {
+    rpc Say(Message) returns (Message);
+}
+
+message Message {
+    string text = 1;
+    google.protobuf.Timestamp when = 2;
+}
