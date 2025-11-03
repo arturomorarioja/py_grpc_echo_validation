@@ -1,9 +1,11 @@
 # Echo: gRPC Sample App
 Example of a gRPC server and client using Python.
 
+It includes validation (the message sent by the client cannot be empty) and timestamp acknowledgement.
+
 ## Instructions
 1. Generate `echo/echo_pb2.py` and `echo/echo_pb2_grpc.py` from `proto/echo.proto`:
-```v
+```proto
 python -m grpc_tools.protoc -Iproto \
   --python_out=echo \
   --grpc_python_out=echo \
