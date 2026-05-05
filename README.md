@@ -3,6 +3,13 @@ Example of a gRPC server and client using Python.
 
 It includes validation (the message sent by the client cannot be empty) and timestamp acknowledgement.
 
+## Installation
+1. Create a Python virtual environment: `python -m venv venv`
+2. Activate the said environment:
+    - Windows: `venv\Scripts\activate` or `.\venv\Scripts\Activate`
+    - Linux/Mac: `source venv/bin/activate`
+3. Install the dependencies: `pip install -r requirements.txt`
+
 ## Instructions
 1. Generate `echo/echo_pb2.py` and `echo/echo_pb2_grpc.py` from `proto/echo.proto`:
 ```proto
